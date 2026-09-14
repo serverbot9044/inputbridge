@@ -1,0 +1,10 @@
+{
+  "name": "inputbridge",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Open-source keyboard and mouse input layer for Xbox Cloud Gaming",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "node scripts/validate.cjs && node tests/shared.test.cjs"
+  }
+}
