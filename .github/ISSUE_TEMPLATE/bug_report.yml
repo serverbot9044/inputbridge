@@ -1,0 +1,39 @@
+name: Bug report
+description: Report an InputBridge problem.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Please remove game-account details, screenshots with private information, and browser profile data before posting."
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      placeholder: "Forza Horizon 5"
+    validations:
+      required: true
+  - type: dropdown
+    id: profile
+    attributes:
+      label: InputBridge profile
+      options: [Auto-detect, Default, Shooter, Racing, Adventure, Platformer, Sports, Custom]
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: "Comet 1.x / Chrome 1xx"
